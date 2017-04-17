@@ -1,9 +1,8 @@
 from django.conf.urls import url
-
-from base import views as base_views
+from base.views import IndexView
 
 urlpatterns = [
     url(r'',
-        base_views.IndexView.as_view(),
+        IndexView.as_view(),
         name='index_view')
 ]

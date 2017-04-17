@@ -24,5 +24,5 @@ urlpatterns = [
 
     url(r'^admin/', admin.site.urls),
 
-    url(r'', cache_page(settings.PAGE_CACHE_SECONDS)(base_views.IndexView.as_view()), name='index'),
+    url(r'', (base_views.IndexView.as_view()), name='index'),
 ]
